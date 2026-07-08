@@ -15,18 +15,18 @@ A practice operating system written from scratch in C and x86 Assembly, followin
 
 ```
 .
-├── boot.s              # Bootloader entry point and Multiboot header
-├── kernel.c            # Kernel entry point
-├── linker.ld           # Linker script
-├── Makefile            # Build automation
+├── src/
+│   ├── boot.s              # Multiboot header and kernel entry point
+│   └── kernel.c            # Kernel implementation
 ├── isodir/
 │   └── boot/
 │       ├── myos
 │       └── grub/
 │           └── grub.cfg
-└── README.md
+├── linker.ld               # Linker script
+├── README.md
+└── .gitignore
 ```
-
 ## Requirements
 
 - i686-elf GCC cross compiler
